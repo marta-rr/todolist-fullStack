@@ -1,0 +1,13 @@
+current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+/Users/Marta/.rbenv/versions/3.1.2/bin/ruby -I /Users/Marta/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220913-56615-berp4i.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= clean
+
+current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\=
+make: Nothing to be done for `all'.
+
+current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= install
