@@ -3,13 +3,34 @@ import $ from 'jquery';
 import {
   indexTasks,
   postTask,
+  deleteTask,
+  markTaskComplete,
+  markTaskActive,
+  displayAllTasks
 } from "./requests.js";
 
-indexTasks(function (response) {
-  var htmlString = response.tasks.map(function(task) {
-    return "<div class='col-12 mb-3 p-2 border rounded task' data-id='" + task.id + "'> \
-      " + task.content + "\
-      </div>";
+
+$(document).on("turbolinks:load", function () {
+  if ($('.static_pages.index').length > 0) {
+    indexTasks(displayAllTasks);
+  }
+});
+
+$(document).on('submit', '#create-task', function (e) {
+  postTask($('#new-task-content').val(), function () {
+    $('#new-task-content').val('');
+    indexTasks(displayAllTasks);
   });
-  $("#tasks").html(htmlString);
+});
+
+$(document).on('click', '.delete', function () {
+  deleteTask($(this).data('id'), setTimeout(function() { indexTasks(displayAllTasks); }, 100));
+});
+
+$(document).on('click', '.mark-complete', function () {
+  if (this.checked) {
+    markTaskComplete($(this).data('id'));
+  } else {
+    markTaskActive($(this).data('id'));
+  }
 });
