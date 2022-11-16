@@ -1,70 +1,251 @@
 current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/pg-1.4.3/ext
-/Users/Marta/.rbenv/versions/3.1.2/bin/ruby -I /Users/Marta/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220913-62898-z79aa7.rb extconf.rb
+/Users/Marta/.rbenv/versions/3.1.2/bin/ruby -I /Users/Marta/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20221116-95349-7gfare.rb extconf.rb --with-pg-config\=/Applications/Postgres.app/Contents/Versions/14/bin/pg_config
 Calling libpq with GVL unlocked
-checking for pg_config... no
-checking for libpq per pkg-config... no
-Using libpq from 
-checking for libpq-fe.h... no
-Can't find the 'libpq-fe.h header
-*****************************************************************************
+Using config values from /Applications/Postgres.app/Contents/Versions/14/bin/pg_config
+checking for whether -Wl,-rpath,/Applications/Postgres.app/Contents/Versions/14/lib is accepted as LDFLAGS... yes
+Using libpq from /Applications/Postgres.app/Contents/Versions/14/lib
+checking for libpq-fe.h... yes
+checking for libpq/libpq-fs.h... yes
+checking for pg_config_manual.h... yes
+checking for PQconnectdb() in -lpq... yes
+checking for PQconninfo() in libpq-fe.h... yes
+checking for PQsslAttribute() in libpq-fe.h... yes
+checking for PQresultVerboseErrorMessage() in libpq-fe.h... yes
+checking for PQencryptPasswordConn() in libpq-fe.h... yes
+checking for PQresultMemorySize() in libpq-fe.h... yes
+checking for PQenterPipelineMode() in libpq-fe.h... yes
+checking for timegm()... yes
+checking for rb_gc_adjust_memory_usage()... yes
+checking for rb_gc_mark_movable()... yes
+checking for rb_io_wait()... yes
+checking for unistd.h... yes
+checking for inttypes.h... yes
+checking for C99 variable length arrays... yes
+creating extconf.h
+creating Makefile
 
-Unable to find PostgreSQL client library.
+current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/pg-1.4.3/ext
+make DESTDIR\= clean
 
-Please install libpq or postgresql client package like so:
-  brew install libpq
+current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/pg-1.4.3/ext
+make DESTDIR\=
+compiling gvl_wrappers.c
+In file included from gvl_wrappers.c:6:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg.c
+In file included from pg.c:49:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_binary_decoder.c
+In file included from pg_binary_decoder.c:8:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_binary_encoder.c
+In file included from pg_binary_encoder.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_coder.c
+In file included from pg_coder.c:6:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_connection.c
+In file included from pg_connection.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+pg_connection.c:41:1: warning: function 'pg_raise_conn_error' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+3 warnings generated.
+compiling pg_copy_coder.c
+In file included from pg_copy_coder.c:6:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_errors.c
+In file included from pg_errors.c:6:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_record_coder.c
+In file included from pg_record_coder.c:6:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_result.c
+In file included from pg_result.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_text_decoder.c
+In file included from pg_text_decoder.c:32:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_text_encoder.c
+In file included from pg_text_encoder.c:43:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_tuple.c
+In file included from pg_tuple.c:1:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_type_map.c
+In file included from pg_type_map.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_type_map_all_strings.c
+In file included from pg_type_map_all_strings.c:9:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_type_map_by_class.c
+In file included from pg_type_map_by_class.c:10:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_type_map_by_column.c
+In file included from pg_type_map_by_column.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_type_map_by_mri_type.c
+In file included from pg_type_map_by_mri_type.c:10:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_type_map_by_oid.c
+In file included from pg_type_map_by_oid.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_type_map_in_ruby.c
+In file included from pg_type_map_in_ruby.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+compiling pg_util.c
+In file included from pg_util.c:7:
+In file included from ./pg.h:62:
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:68:5: warning: 'SIZEOF_VOID_P' is not defined, evaluates to 0 [-Wundef]
+#if SIZEOF_VOID_P >= 8
+    ^
+/Applications/Postgres.app/Contents/Versions/14/include/pg_config_manual.h:151:5: warning: 'HAVE_DECL_POSIX_FADVISE' is not defined, evaluates to 0 [-Wundef]
+#if HAVE_DECL_POSIX_FADVISE && defined(HAVE_POSIX_FADVISE)
+    ^
+2 warnings generated.
+linking shared-object pg_ext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
-or try again with:
-  gem install pg -- --with-pg-config=/path/to/pg_config
-
-or set library paths manually with:
-  gem install pg -- --with-pg-include=/path/to/libpq-fe.h/ --with-pg-lib=/path/to/libpq.so/
-
-*** extconf.rb failed ***
-Could not create Makefile due to some reason, probably lack of necessary
-libraries and/or headers.  Check the mkmf.log file for more details.  You may
-need configuration options.
-
-Provided configuration options:
-	--with-opt-dir
-	--without-opt-dir
-	--with-opt-include
-	--without-opt-include=${opt-dir}/include
-	--with-opt-lib
-	--without-opt-lib=${opt-dir}/lib
-	--with-make-prog
-	--without-make-prog
-	--srcdir=.
-	--curdir
-	--ruby=/Users/Marta/.rbenv/versions/3.1.2/bin/$(RUBY_BASE_NAME)
-	--with-pg
-	--without-pg
-	--enable-gvl-unlock
-	--disable-gvl-unlock
-	--enable-windows-cross
-	--disable-windows-cross
-	--with-pg-config
-	--without-pg-config
-	--with-pg_config
-	--without-pg_config
-	--with-libpq-dir
-	--without-libpq-dir
-	--with-libpq-include
-	--without-libpq-include=${libpq-dir}/include
-	--with-libpq-lib
-	--without-libpq-lib=${libpq-dir}/lib
-	--with-libpq-config
-	--without-libpq-config
-	--with-pkg-config
-	--without-pkg-config
-	--with-pg-dir
-	--without-pg-dir
-	--with-pg-include
-	--without-pg-include=${pg-dir}/include
-	--with-pg-lib
-	--without-pg-lib=${pg-dir}/lib
-
-To see why this extension failed to compile, please check the mkmf.log which can be found here:
-
-  /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/extensions/x86_64-darwin-21/3.1.0/pg-1.4.3/mkmf.log
-
-extconf failed, exit code 1
+current directory: /Users/Marta/Desktop/Altcademy_BackEnd/todolist-fullStack/vendor/bundle/ruby/3.1.0/gems/pg-1.4.3/ext
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20221116-95349-9c1mfh
+installing pg_ext libraries
